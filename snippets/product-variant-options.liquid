@@ -56,7 +56,7 @@
         checked
       {% endif %}
       {% if option_disabled %}
-        class="disabled"
+        class="disabled {% if option_name == 'color' or option_name == 'Color' %}k4_color{% endif %}"
       {% endif %}
     >
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
